@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Sidebar.css */
+
+/* Thay đổi màu nền cho sidebar */
+.custom-sider {
+  background-color: #f8f8f8; /* Màu đỏ (bg-red-500) */
+}
+
+/* Màu sắc của các item trong Menu */
+.custom-menu-item {
+  color: #fff; /* Màu chữ trắng */
+}
+
+/* Thay đổi màu khi item được chọn */
+.custom-menu-item-selected {
+  background-color: #fdf4e3;
+}
+.custom-sider .ant-layout-sider-trigger {
+    background-color: #e1c288;/* Màu đỏ đậm */
+    color: #fff; /* Màu chữ trắng */
+  }
+  
+  /* Thay đổi màu của nút khi hover */
+  .custom-sider .ant-layout-sider-trigger:hover {
+    background-color: #e1bd7a; /* Màu đỏ nhạt hơn khi hover */
+    color: #fff;
+  }
