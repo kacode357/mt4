@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo-mt4.png";
+import logo from "../assets/logo-mt4-2.png";
 
 function Header() {
   const fileInputRef = useRef<HTMLInputElement>(null);
