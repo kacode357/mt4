@@ -22,7 +22,15 @@ const ImageList = () => {
           <Col span={6} key={image.id} className="flex justify-center">
             <Card
               hoverable
-              cover={<img alt={image.title} src={image.img} />}
+              cover={
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    alt={image.title}
+                    src={image.img}
+                    className="transform scale-105 transition-transform duration-300"
+                  />
+                </div>
+              }
               className="w-11/12 shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex justify-between items-center">
@@ -41,7 +49,15 @@ const ImageList = () => {
           <Col span={6} key={image.id} className="flex justify-center">
             <Card
               hoverable
-              cover={<img alt={image.title} src={image.img} />}
+              cover={
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    alt={image.title}
+                    src={image.img}
+                    className="transform scale-105 transition-transform duration-300"
+                  />
+                </div>
+              }
               className="w-11/12 shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex justify-between items-center">
