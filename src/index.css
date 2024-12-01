@@ -18,12 +18,25 @@
   background-color: #fdf4e3;
 }
 .custom-sider .ant-layout-sider-trigger {
-    background-color: #e1c288;/* Màu đỏ đậm */
-    color: #fff; /* Màu chữ trắng */
+  background-color: #e1c288; /* Màu đỏ đậm */
+  color: #fff; /* Màu chữ trắng */
+}
+
+/* Thay đổi màu của nút khi hover */
+.custom-sider .ant-layout-sider-trigger:hover {
+  background-color: #e1bd7a; /* Màu đỏ nhạt hơn khi hover */
+  color: #fff;
+}
+.list {
+  /* column-count: 3; */
+  columns: 300px;
+}
+img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+@media (max-width: 768px) {
+  .list {
+    column-count: 2;
   }
-  
-  /* Thay đổi màu của nút khi hover */
-  .custom-sider .ant-layout-sider-trigger:hover {
-    background-color: #e1bd7a; /* Màu đỏ nhạt hơn khi hover */
-    color: #fff;
-  }
+}

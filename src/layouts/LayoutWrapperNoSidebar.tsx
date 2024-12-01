@@ -10,22 +10,22 @@ const { Content } = Layout;
 const LayoutWrapper = () => {
   return (
     <Layout>
-      {/* Header and Introduction with the same background */}
+      {/* Header và Introduction với cùng nền */}
       <div
-        className="relative w-full h-[700px] bg-cover bg-center flex flex-col items-center justify-center text-white font-sans"
+        className="relative w-full h-[1200px] sm:h-[500px] md:h-[600px] lg:h-[700px] bg-cover bg-center flex flex-col items-center justify-center text-white font-sans"
         style={{
           backgroundImage: `url(${introduceImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        {/* Overlay with darker effect */}
+        {/* Overlay với hiệu ứng tối hơn */}
         <div
           className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60 z-10"
           style={{ pointerEvents: "none" }}
         ></div>
 
-        {/* Make sure Header is above the overlay */}
+        {/* Đảm bảo Header luôn nằm trên overlay */}
         <div className="relative z-20">
           <HeaderComponent />
         </div>

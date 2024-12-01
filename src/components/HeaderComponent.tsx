@@ -12,8 +12,8 @@ function Header() {
   };
 
   return (
-    <header className="text-white mb-28 font-roboto  border-b-2 border-white">
-      <div className=" mx-auto grid grid-cols-12 items-center px-12 py-4">
+    <header className="text-white mb-28 font-roboto border-b-2 border-white hidden md:block">
+      <div className="mx-auto grid grid-cols-12 items-center px-12 py-4">
         {/* Logo (left-aligned, spans 3 columns) */}
         <div className="col-span-3 flex items-center">
           <img src={logo} alt="Logo MT4" className="h-10 w-24 object-contain" />
@@ -58,10 +58,10 @@ function Header() {
             Liên hệ
           </Link>
 
-          {/* Upload File Button */}
+          {/* Upload File Button (hidden on mobile) */}
           <button
             onClick={handleFileUpload}
-            className="text-white hover:text-[#8b4513] rounded-md py-1 px-3 bg-transparent hover:bg-[#f1f1f1] transition-colors font-medium"
+            className="text-white hover:text-[#8b4513] rounded-md py-1 px-3 bg-transparent hover:bg-[#f1f1f1] transition-colors font-medium hidden md:inline-block"
           >
             Upload File
           </button>
