@@ -40,16 +40,3 @@ img {
     column-count: 2;
   }
 }
-/* Định dạng lại Popover */
-.popover-custom .ant-popover-inner {
-  margin: 0 10px; /* Thêm margin để Popover không bị sát viền */
-  max-width: 250px; /* Giới hạn chiều rộng tối đa của Popover */
-}
-
-@media (max-width: 768px) {
-  /* Cải thiện hiển thị trên các thiết bị nhỏ */
-  .popover-custom .ant-popover-inner {
-    left: 10%; /* Đặt Popover vào giữa màn hình */
-    right: 10%;
-  }
-}
