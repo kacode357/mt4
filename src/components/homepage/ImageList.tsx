@@ -17,7 +17,7 @@ const ImageList = () => {
   ];
 
   return (
-    <div className="container bg-[#fdf4e3] py-2 px-4">
+    <div className="container bg-[#fdf4e3] ">
       {/* Tiêu đề cho component */}
       <h2 className="text-4xl font-semibold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-[#181818] to-[#353539b0] drop-shadow-lg">
         Danh Sách Ảnh Các Di Tích Lịch Sử
