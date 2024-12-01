@@ -3,6 +3,7 @@ import { Layout } from "antd";
 import Sidebar from "../components/Sidebar";
 import { Outlet } from "react-router-dom";
 import Header from "../components/HeaderComponent2";
+import Introduction from "../components/homepage/Introduction";
 
 const { Content } = Layout;
 
@@ -11,6 +12,7 @@ const LayoutWrapper = () => {
     <Layout style={{ minHeight: "100vh" }}>
       {/* Giữ Header ở trên */}
       <Header />
+      <Introduction />
       <Layout>
         {/* Sidebar nằm bên trái */}
         <Sidebar />

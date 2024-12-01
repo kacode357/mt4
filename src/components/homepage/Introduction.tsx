@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Card, Button } from 'antd';
-import introduceImage from "../../assets/introduce2.png";
+
 
 const Introduction = () => {
   const [inView, setInView] = useState(false);
@@ -16,11 +16,11 @@ const Introduction = () => {
 
   return (
     <div
-      className="relative w-full h-[500px] bg-cover bg-center flex items-center justify-center text-white font-sans overflow-hidden" // Thêm overflow-hidden vào div cha
-      style={{ backgroundImage: `url(${introduceImage})` }}
+      className="" // Thêm overflow-hidden vào div cha
+     
     >
       {/* Overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70"></div>
+      
 
       {/* Main Content */}
       <div
