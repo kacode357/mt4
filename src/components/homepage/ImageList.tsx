@@ -27,24 +27,30 @@ const ImageList = () => (
     <div className="list">
       {images.map((image) => (
         <div key={image.id} className="">
-          <Popover
-            content={
-              <div className="p-2">
-                <h3 className="text-lg font-semibold">{image.title}</h3>
-                <p className="text-sm text-gray-500">{image.description}</p>
-                <p className="text-sm text-gray-400">Tác giả: {image.author}</p>
-              </div>
-            }
-            title="Thông tin di tích"
-            trigger="hover"
-            placement="right"
-          >
-            <img
-              alt={image.title}
-              src={image.img}
-              className="w-full h-auto"
-            />
-          </Popover>
+         <Popover
+  content={
+    <div className="p-2">
+      <img
+        src={image.img}
+        alt={image.title}
+        className="max-w-xs max-h-full object-contain transform scale-90"  
+      />
+      <h3 className="text-lg font-semibold">{image.title}</h3>
+      <p className="text-sm text-gray-500">{image.description}</p>
+      <p className="text-sm text-gray-400">Tác giả: {image.author}</p>
+    </div>
+  }
+  title="Thông tin di tích"
+  trigger="hover"
+  placement="right"
+>
+  <img
+    alt={image.title}
+    src={image.img}
+    className="w-full h-auto"
+  />
+</Popover>
+
         </div>
       ))}
     </div>
