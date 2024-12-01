@@ -16,7 +16,7 @@ const Introduction = () => {
 
   return (
     <div
-      className="relative w-full h-[500px] bg-cover bg-center flex items-center justify-center text-white font-sans"
+      className="relative w-full h-[500px] bg-cover bg-center flex items-center justify-center text-white font-sans overflow-hidden" // Thêm overflow-hidden vào div cha
       style={{ backgroundImage: `url(${introduceImage})` }}
     >
       {/* Overlay for text readability */}
@@ -54,39 +54,39 @@ const Introduction = () => {
         </div>
 
         {/* Right Section (Features with Ant Design Cards) */}
-        <div className="flex-1 w-full space-y-6 text-left overflow-auto">
+        <div className="flex-1 w-full space-y-6 text-left overflow-hidden"> {/* Thêm overflow-hidden để không có cuộn */}
           <h3 className="text-2xl font-semibold mb-4 text-gray-200">Tính năng nổi bật:</h3>
 
           <div className="space-y-4">
             {/* Each card */}
             <Card
-              className={`transition-all transform ${inView ? 'opacity-100' : 'opacity-0'}`}
+              className={`transition-all transform bg-transparent border border-gray-300 rounded-lg shadow-lg ${inView ? 'opacity-100' : 'opacity-0'} hover:scale-105 hover:shadow-2xl`}
               bordered={false}
               hoverable
-              title={<span className="text-xl font-semibold">Tải ảnh lên dễ dàng</span>}
+              title={<span className="text-xl font-semibold text-gray-200">Tải ảnh lên dễ dàng</span>}
               extra={<Button type="link" className="text-[#ff8f00] hover:text-[#ff6f00]">Tìm hiểu thêm</Button>}
             >
-              <p className="text-sm mt-1">Người dùng dễ dàng tải ảnh lên từ thiết bị cá nhân.</p>
+              <p className="text-sm mt-1 text-gray-200">Người dùng dễ dàng tải ảnh lên từ thiết bị cá nhân.</p>
             </Card>
 
             <Card
-              className={`transition-all transform ${inView ? 'opacity-100' : 'opacity-0'}`}
+              className={`transition-all transform bg-transparent border border-gray-300 rounded-lg shadow-lg ${inView ? 'opacity-100' : 'opacity-0'} hover:scale-105 hover:shadow-2xl`}
               bordered={false}
               hoverable
-              title={<span className="text-xl font-semibold">Đánh giá tự động</span>}
+              title={<span className="text-xl font-semibold text-gray-200">Đánh giá tự động</span>}
               extra={<Button type="link" className="text-[#ff8f00] hover:text-[#ff6f00]">Tìm hiểu thêm</Button>}
             >
-              <p className="text-sm mt-1">Hệ thống đánh giá tự động dựa trên AI.</p>
+              <p className="text-sm mt-1 text-gray-200">Hệ thống đánh giá tự động dựa trên AI.</p>
             </Card>
 
             <Card
-              className={`transition-all transform ${inView ? 'opacity-100' : 'opacity-0'}`}
+              className={`transition-all transform bg-transparent border border-gray-300 rounded-lg shadow-lg ${inView ? 'opacity-100' : 'opacity-0'} hover:scale-105 hover:shadow-2xl`}
               bordered={false}
               hoverable
-              title={<span className="text-xl font-semibold">Bảo mật cao</span>}
+              title={<span className="text-xl font-semibold text-gray-200">Bảo mật cao</span>}
               extra={<Button type="link" className="text-[#ff8f00] hover:text-[#ff6f00]">Tìm hiểu thêm</Button>}
             >
-              <p className="text-sm mt-1">Ảnh được bảo mật và lưu trữ an toàn.</p>
+              <p className="text-sm mt-1 text-gray-200">Ảnh được bảo mật và lưu trữ an toàn.</p>
             </Card>
           </div>
         </div>

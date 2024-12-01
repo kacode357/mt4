@@ -26,22 +26,40 @@ function Header() {
         {/* Navigation Links */}
         <nav className="flex items-center space-x-6 text-lg">
           <Link
-            to="/button1"
+            to="/"
             className="text-[#4a3f35] hover:text-[#8b4513] transition-colors px-3"
           >
-            Home
+            Trang chủ
           </Link>
           <Link
-            to="/button2"
+            to="/about"
             className="text-[#4a3f35] hover:text-[#8b4513] transition-colors px-3"
           >
-            About Us
+            Giới thiệu
           </Link>
           <Link
-            to="/button3"
+            to="/contest"
             className="text-[#4a3f35] hover:text-[#8b4513] transition-colors px-3"
           >
-            Services
+            Cuộc thi
+          </Link>
+          <Link
+            to="/exhibition"
+            className="text-[#4a3f35] hover:text-[#8b4513] transition-colors px-3"
+          >
+            Triển lãm
+          </Link>
+          <Link
+            to="/archive"
+            className="text-[#4a3f35] hover:text-[#8b4513] transition-colors px-3"
+          >
+            Kho lưu trữ
+          </Link>
+          <Link
+            to="/contact"
+            className="text-[#4a3f35] hover:text-[#8b4513] transition-colors px-3"
+          >
+            Liên hệ
           </Link>
 
           {/* Upload File Button */}
