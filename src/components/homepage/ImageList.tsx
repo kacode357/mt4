@@ -17,16 +17,16 @@ const ImageList = () => {
   ];
 
   return (
-    <div className="container bg-[#fdf4e3] ">
+    <div className=" bg-[#fdf4e3] py-4 px-4">
       {/* Tiêu đề cho component */}
       <h2 className="text-4xl font-semibold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-[#181818] to-[#353539b0] drop-shadow-lg">
         Danh Sách Ảnh Các Di Tích Lịch Sử
       </h2>
-      
+
       {/* Row để chứa các thẻ Card cho 3 ảnh trên */}
-      <Row gutter={[8, 12]} justify="center">
+      <Row gutter={[16, 24]} justify="center" className="mx-auto">
         {images.slice(0, 3).map((image) => (
-          <Col span={8} key={image.id} className="flex justify-center">
+          <Col xs={24} sm={12} md={8} lg={8} xl={8} key={image.id} className="flex justify-center">
             <Card
               hoverable
               cover={
@@ -38,7 +38,7 @@ const ImageList = () => {
                   />
                 </div>
               }
-              className="w-11/12 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="w-full shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex justify-between items-center">
                 <div className="text-lg font-semibold">{image.title}</div>
@@ -50,9 +50,9 @@ const ImageList = () => {
       </Row>
 
       {/* Row để chứa các thẻ Card cho 3 ảnh dưới */}
-      <Row gutter={[8, 12]} justify="center" style={{ marginTop: '12px' }}>
+      <Row gutter={[16, 24]} justify="center" style={{ marginTop: '12px' }} className="mx-auto">
         {images.slice(3, 6).map((image) => (
-          <Col span={8} key={image.id} className="flex justify-center">
+          <Col xs={24} sm={12} md={8} lg={8} xl={8} key={image.id} className="flex justify-center">
             <Card
               hoverable
               cover={
@@ -64,7 +64,7 @@ const ImageList = () => {
                   />
                 </div>
               }
-              className="w-11/12 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="w-full shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex justify-between items-center">
                 <div className="text-lg font-semibold">{image.title}</div>
