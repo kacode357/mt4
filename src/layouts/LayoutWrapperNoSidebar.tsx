@@ -12,7 +12,7 @@ const LayoutWrapper = () => {
     <Layout>
       {/* Header and Introduction with the same background */}
       <div
-        className="relative w-full h-[590px] bg-cover bg-center flex flex-col items-center justify-center text-white font-sans"
+        className="relative w-full h-[700px] bg-cover bg-center flex flex-col items-center justify-center text-white font-sans"
         style={{
           backgroundImage: `url(${introduceImage})`,
           backgroundSize: "cover",

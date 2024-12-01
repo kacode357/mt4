@@ -12,8 +12,8 @@ function Header() {
   };
 
   return (
-    <header className="text-white mb-8 font-roboto  border-b-2 border-white">
-      <div className="container mx-auto grid grid-cols-12 items-center px-12 py-4">
+    <header className="text-white mb-28 font-roboto  border-b-2 border-white">
+      <div className=" mx-auto grid grid-cols-12 items-center px-12 py-4">
         {/* Logo (left-aligned, spans 3 columns) */}
         <div className="col-span-3 flex items-center">
           <img src={logo} alt="Logo MT4" className="h-10 w-24 object-contain" />
