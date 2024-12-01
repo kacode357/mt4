@@ -14,7 +14,7 @@ const ImageList = () => {
   ];
 
   return (
-    <div className="container bg-[#fdf4e3] py-2 px-10">
+    <div className="container bg-[#fdf4e3] py-2 px-6">
       {/* Row để chứa các thẻ Card */}
       <Row gutter={[16, 24]} justify="center">
         {/* Hàng trên: 4 ảnh */}
@@ -27,7 +27,7 @@ const ImageList = () => {
                   <img
                     alt={image.title}
                     src={image.img}
-                    className="transform scale-105 transition-transform duration-300"
+                    className="transform scale-110 transition-transform duration-300"
                   />
                 </div>
               }
@@ -54,7 +54,7 @@ const ImageList = () => {
                   <img
                     alt={image.title}
                     src={image.img}
-                    className="transform scale-105 transition-transform duration-300"
+                    className="transform scale-110 transition-transform duration-300"
                   />
                 </div>
               }
